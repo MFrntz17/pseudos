@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/* Pseudoelemento apicado ao h1 adiciondo conteúdo antes */
+
+h1::before {
+    content: "tema: ";
+    font-weight: 900;
+    color: #0000ff;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #8b0000;
+    margin: 2px;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #808080;
+    transition: background-color 0.5s;
+}
+
+nav ul li a:hover {
+    color: #000000;
+}
+
+nav ul li a:active {
+    color: #808080;
+}
+
+nav ul li a:visited {
+    color: #00ffff;
+}
+
+p::first-letter {
+    font-size: 1.5em;
+}
+
+img {
+    width: 800px;
+    height: 700px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+main{
+    text-align: center;
+    padding: 100px 20px;
+    height: 100vh;
+}
